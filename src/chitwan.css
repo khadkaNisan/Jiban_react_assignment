@@ -1,0 +1,52 @@
+.Pokhara {
+  margin-top: 10rem;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.pokhara-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://www.passportandpixels.com/wp-content/uploads/2024/05/Leroo-Day-1_R5-81-Edit-Edit_web.jpg.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.pokhara-content {
+  color: white;
+  max-width: 40%;
+  padding: 2rem;
+  margin-left: 5%;
+}
+
+.pokhara-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pokhara-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.pokhara-content button {
+  background-color: #100808;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pokhara-content button:hover {
+  background-color: #ff5252;
+}

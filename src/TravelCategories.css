@@ -1,0 +1,86 @@
+ .destination-card {
+        position: relative;
+        height: 300px; /* keep card size fixed */
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card-img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s, filter 0.5s;
+      }
+
+      /* Add overlay */
+      .card-img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0); /* transparent initially */
+        transition: background 0.4s;
+        z-index: 1;
+      }
+
+      /* Hover overlay */
+      .destination-card:hover .card-img::after {
+        background: rgba(0, 0, 0, 0.4); /* dark semi-transparent overlay */
+      }
+
+      /* Zoom image slightly on hover */
+      .destination-card:hover .card-img img {
+        transform: scale(1.05);
+        filter: brightness(0.7); /* slightly darker */
+      }
+
+      /* Content positioning */
+      .card-content {
+        position: absolute;
+        top: 50px; /* slightly below category label */
+        left: 0;
+        right: 0;
+        color: white;
+        opacity: 0;
+        padding: 20px;
+        transition: opacity 0.4s ease;
+        z-index: 2;
+      }
+
+      /* Show content on hover */
+      .destination-card:hover .card-content {
+        opacity: 1;
+      }
+
+      /* Optional: style headings and paragraphs for hover */
+      .card-content h3,
+      .card-content p {
+        color: white;
+      }
+      .card-content .price {
+        color: #4caf50;
+      }
+      .button-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn {
+        padding: 6px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        background-color: black;
+      }
